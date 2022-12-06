@@ -1,0 +1,15 @@
+.dropdowndiv {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.dropdown {
+    height: 30px;
+    border-radius: .2rem;
+    background-color: rgba(0, 0, 255, 0.514);
+    border-color: black;
+    border-width: 1px;
+    color: black;
+    width: 120px;
+}

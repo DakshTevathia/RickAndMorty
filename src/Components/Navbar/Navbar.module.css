@@ -1,0 +1,43 @@
+.navbar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    padding: 20px;
+    justify-items: start;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+    background-color: #1bff00e0;
+}
+
+.wiki {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    font-family: "Lucida Console";
+}
+
+a {
+    text-decoration: none;
+    color: rgb(65 86 239);
+    font-weight: 525;
+}
+
+.wiki:hover {
+    color: rgb(8, 9, 14);
+}
+
+.rightGrid {
+    justify-self: center;
+    width: 100%;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-family: "Lucida Console";
+}
+
+.rightGrid div {
+    align-self: center;
+}

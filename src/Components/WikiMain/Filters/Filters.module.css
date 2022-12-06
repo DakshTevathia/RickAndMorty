@@ -1,0 +1,35 @@
+/* * {
+    font-family: "Lucida Console";
+} */
+
+.filterGrid {
+    position: sticky;
+    top: 7%;
+    font-family: "Lucida Console" !important;
+    display: grid;
+    padding: 1.2rem;
+    height: 50vh;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.filterHeading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.btnDiv {
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+    justify-content: center;
+}
+
+button {
+    width: 14rem;
+    font-family: inherit;
+    border-radius: 4px;
+    border-style: none;
+    height: 48px;
+}
