@@ -1,8 +1,8 @@
 import React from 'react'
-
+import classes from './Location.module.css'
 const Location = () => {
     return (
-        <div>Location</div>
+        <div className={classes.container}>Location</div>
     )
 }
 

@@ -4,6 +4,10 @@
     margin: 10px 0px;
 }
 
+.container {
+    /* height: 100vh; */
+}
+
 .dropdown {
     height: 30px;
     border-radius: .2rem;
@@ -12,4 +16,10 @@
     border-width: 1px;
     color: black;
     width: 120px;
+}
+
+.episodeGrid {
+    display: grid;
+    grid: auto auto;
+    grid-template-columns: 1fr 4fr;
 }

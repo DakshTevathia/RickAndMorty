@@ -1,4 +1,15 @@
 .Footer {
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 40px;
+    margin-top: 1rem;
+    position: sticky;
+    bottom: 0px;
+    z-index: 2;
+    background-color: #1bff00e0;
+    font-size: 1rem;
+    width: 100%;
+    font-family: "Lucida Console";
+    text-transform: uppercase;
 }

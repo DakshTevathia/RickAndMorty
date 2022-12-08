@@ -1,4 +1,4 @@
-import CharacterCard from './CharacterCard'
+import CharacterCard from '../CharacterCards/CharacterCard'
 import classes from './ListOfCharacters.module.css'
 
 const ListOfCharacters = ({ data }) => {
