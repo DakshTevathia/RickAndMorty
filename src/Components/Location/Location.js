@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import InputGroup from '../Episodes/InputGroup/InputGroup';
+import InputGroup from '../InputGroup/InputGroup';
 import ListOfCharacters from '../WikiMain/Characters/ListofCharacters/ListOfCharacters';
 import classes from '../Episodes/Episode.module.css';
 

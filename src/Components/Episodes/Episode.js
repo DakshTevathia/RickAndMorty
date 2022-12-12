@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import ListOfCharacters from '../WikiMain/Characters/ListofCharacters/ListOfCharacters';
 import classes from './Episode.module.css';
-import InputGroup from './InputGroup/InputGroup.js';
+import InputGroup from '../InputGroup/InputGroup.js';
 
 
 const Episode = () => {
