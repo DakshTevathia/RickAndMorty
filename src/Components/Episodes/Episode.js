@@ -1,12 +1,14 @@
 import { useEffect, useState } from 'react'
-import axios from 'axios';
+import ListOfCharacters from '../WikiMain/Characters/ListofCharacters/ListOfCharacters';
 import classes from './Episode.module.css';
+import InputGroup from './InputGroup/InputGroup.js';
+
 
 const Episode = () => {
   const [selectSize, setSelectSize] = useState(51);
   const [id, setId] = useState(1);
   const [info, setInfo] = useState([]);
-  let [results,setResults]=useState([])
+  let [data, setData] = useState([]);
   const { air_date, name } = info;
 
 
@@ -14,15 +16,19 @@ const Episode = () => {
   let selectData = [];
   let episodeData;
   if (episodeData) {
-    let { info, results } = episodeData;
+    let { info, data } = episodeData;
   }
   let api = `https://rickandmortyapi.com/api/episode/${id}`;
   useEffect(() => {
     (async function () {
       let data = await fetch(api).then((res) => res.json())
       setInfo(data);
+      console.log(data);
+      let a = await Promise.all(data.characters.map((linkUrl) => { return fetch(linkUrl).then(res => res.json()) }));
+      console.log(a);
+      setData(a);
     })();
-  }, [id])
+  }, [api])
 
   for (let i = 1; i <= selectSize; ++i) {
     selectData.push(`Episode ${i}`);
@@ -30,11 +36,10 @@ const Episode = () => {
 
   const handleChange = (event) => {
     setId(event.target.value);
-    console.log(event.target.value);
   };
 
   return (
-    <div className="container">
+    <div>
       <div className='row'>
         <h1 className='text-center mb-3'>Episode:{' '}
           <span className='text-primary'>{name === "" ? "Unknown" : name}</span> </h1>
@@ -43,28 +48,27 @@ const Episode = () => {
       <div className={classes.episodeGrid}>
         <div style={{
           display: "flex",
-          justifyContent: "center",
+          // justifyContent: "center",
           flexDirection: "column",
           alignItems: "center"
         }} >
-          Pick Episodes
-          {/* <div className={classes.dropdowndiv}> */}
-          <select
-            className={classes.dropdown}
-            value={id}
-            inputProps={{ 'aria-label': 'Without label' }}
-            label="Choose Episode"
-            onChange={handleChange}>
-            {selectData.map((ele, idx) => { return (<option value={idx + 1}>{ele}</option>) })}
-          </select>
-          {/* <ListOfCharacters></ListOfCharacters> */}
-          {/* </div> */}
+          <div style={{
+            position: "fixed",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            flexDirection: "column",
+            gap: "10px",
+            marginTop: "30px"
+          }}>
+            Pick Episodes
+            <InputGroup setId={setId} episodeCount={51} name="Episode" />
+          </div>
+        </div>
+        <div>
+          <ListOfCharacters data={data} />
 
         </div>
-        <div >
-          Cards are here
-        </div>
-
       </div>
     </div >
 

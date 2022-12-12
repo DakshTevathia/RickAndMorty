@@ -2,7 +2,7 @@ import React from 'react'
 import classes from "./CharacterCard.module.css"
 
 const CharacterCard = ({ data }) => {
-    //   console.log(props);
+      console.log(data);
     return (
         <div className={classes.maindiv}>
             <img className={classes.img} src={data.image} alt="CharacterImage" />
