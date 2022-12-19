@@ -51,7 +51,7 @@ const CharacterCard = () => {
                             marginTop: '0.3rem',
                             borderRadius: '5px',
                             fontFamily: "Lucida Console",
-                            color: '#0d6efd',
+                            color: '#0d6efd ',
                         }}>
                             Name: {characterinfo?.name}
                         </div>
@@ -66,7 +66,7 @@ const CharacterCard = () => {
                                 marginTop: '0.3rem',
                                 borderRadius: '5px',
                                 fontFamily: "Lucida Console",
-                                color: '#0d6efd'
+                                color: '#0d6efd '
                             }}>
                             Location: {characterinfo?.location?.name}
                         </div>
@@ -81,7 +81,7 @@ const CharacterCard = () => {
                                 marginTop: '0.3rem',
                                 borderRadius: '5px',
                                 fontFamily: "Lucida Console",
-                                color: '#0d6efd'
+                                color: '#0d6efd '
                             }}>
                             Species: {characterinfo.species}
                         </div>
@@ -96,7 +96,7 @@ const CharacterCard = () => {
                                 marginTop: '0.3rem',
                                 borderRadius: '5px',
                                 fontFamily: "Lucida Console",
-                                color: '#0d6efd'
+                                color: '#0d6efd '
                             }}>
                             Status: {characterinfo.status}
                         </div>
@@ -111,7 +111,7 @@ const CharacterCard = () => {
                                 marginTop: '0.3rem',
                                 borderRadius: '5px',
                                 fontFamily: "Lucida Console",
-                                color: '#0d6efd'
+                                color: '#0d6efd '
                             }}>
                             Gender: {characterinfo.gender}
                         </div>
@@ -126,7 +126,7 @@ const CharacterCard = () => {
                                 marginTop: '0.3rem',
                                 borderRadius: '5px',
                                 fontFamily: "Lucida Console",
-                                color: '#0d6efd'
+                                color: '#0d6efd '
                             }}>
                             {characterinfo.type === '' ? 'Type: Regular' : 'Type: ' + characterinfo.type}
                         </div>

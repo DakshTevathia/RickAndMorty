@@ -15,11 +15,11 @@ function App() {
   return (
     <div className="App">
       <img src={image} alt='bgImage' style={{
-        zIndex: '-1',
+        zIndex: '-5',
         position: 'fixed',
         height: '100%',
         width: '100%',
-        opacity: '0.75'
+        opacity: '0.65'
       }} />
       <Navbar></Navbar>
       <Routes>

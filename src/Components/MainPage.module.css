@@ -1,0 +1,19 @@
+.exploreButton {
+    font-family: 'Lucida Console';
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.exploreButton button {
+    border-radius: 15px;
+}
+
+.exploreButton button:hover {
+    background-color: #0d6efd ;
+    color: white;
+    border-radius: 15px;
+    text-decoration: none;
+}
