@@ -5,19 +5,11 @@ import classes from '../Episodes/Episode.module.css';
 
 
 const Location = () => {
-    const [selectSize, setSelectSize] = useState(51);
     const [id, setId] = useState(1);
     const [info, setInfo] = useState([]);
     let [data, setData] = useState([]);
     const { name, type, dimension } = info;
 
-
-    const [dropDownData, setDropDownData] = useState([]);
-    let selectData = [];
-    let episodeData;
-    if (episodeData) {
-        let { info, data } = episodeData;
-    }
     let api = `https://rickandmortyapi.com/api/location/${id}`;
     useEffect(() => {
         (async function () {
@@ -30,13 +22,6 @@ const Location = () => {
         })();
     }, [api])
 
-    for (let i = 1; i <= selectSize; ++i) {
-        selectData.push(`Episode ${i}`);
-    }
-
-    const handleChange = (event) => {
-        setId(event.target.value);
-    };
 
     return (
         <div>

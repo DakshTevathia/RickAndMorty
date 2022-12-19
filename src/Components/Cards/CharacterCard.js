@@ -1,5 +1,3 @@
-import { green } from '@mui/material/colors';
-import { color, width } from '@mui/system';
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 
