@@ -39,7 +39,7 @@ const Characters = () => {
                 <Filters setPageNumber={setPageNumber} setSpecies={setSpecies} setStatus={setStatus} setGender={setGender} />
                 <div className={classes.paginationListOfCharsDiv}>
                     <div className={classes.divider} >
-                        <ListOfCharacters data={data} />
+                        <ListOfCharacters pageLoaded='/Characters/' data={data} />
                     </div>
                     <div className={classes.paginationStyles}><Pagination setPageNumber={setPageNumber} pageNumber={pageNumber} pageDataCount={pageDataCount} /></div>
                 </div>

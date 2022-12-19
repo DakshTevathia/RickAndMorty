@@ -7,6 +7,7 @@ import Location from './Components/Location/Location';
 import Footer from "./Components/Footer/Footer"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Routes, Route } from "react-router-dom";
+import CharacterCard from './Components/Cards/CharacterCard';
 
 function App() {
 
@@ -15,9 +16,14 @@ function App() {
       <Navbar></Navbar>
       <Routes>
         <Route exact path="/" element={<MainPage />}></Route>
+        <Route exact path="/:id" element={<CharacterCard />}></Route>
         <Route exact path="/Characters" element={<Characters />}></Route>
+        <Route exact path="Characters/:id" element={<CharacterCard />}></Route>
         <Route exact path="/Episode" element={<Episode />}></Route>
+        <Route exact path="Episode/:id" element={<CharacterCard />}></Route>
         <Route exact path="/Location" element={<Location />}></Route>
+        <Route exact path="Location/:id" element={<CharacterCard />}></Route>
+        
       </Routes>
       <Footer />
     </div>

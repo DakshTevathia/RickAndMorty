@@ -4,7 +4,7 @@
     align-items: center;
     height: 40px;
     margin-top: 1rem;
-    position: sticky;
+    position: fixed;
     bottom: 0px;
     z-index: 2;
     background-color: #1bff00e0;

@@ -15,4 +15,6 @@
 .paginationStyles {
     position: relative;
     left: -10vw;
+    margin-bottom: 4rem;
+    z-index: -1;
 }

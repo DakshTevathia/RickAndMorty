@@ -67,7 +67,7 @@ const Location = () => {
                     </div>
                 </div>
                 <div>
-                    <ListOfCharacters data={data} />
+                    <ListOfCharacters pageLoaded='/Location/' data={data} />
 
                 </div>
             </div>

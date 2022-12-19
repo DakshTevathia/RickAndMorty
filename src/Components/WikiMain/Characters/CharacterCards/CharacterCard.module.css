@@ -7,18 +7,29 @@
     padding-top: 1.2rem;
     background-color: #1aff0086;
     padding-bottom: 1.2rem;
+    text-decoration: none;
 }
 
 .innerdiv {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
+    text-align: center;
+    color: black;
+    font-family: "Lucida Console";
+    font-size: 14px;
+    margin-top: 0.5rem;
+
 }
 
 .img {
-    width: 200px;
+    width: 80%;
     height: auto;
-    border: solid #4a4545 0.1rem;
-    border-radius: 8rem;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid black 0.125rem;
+    border-radius: 50%;
+    /* box-shadow: 0 0 0 2px #0a58ca,
+        0 0 0 4px #0a58ca; */
 }

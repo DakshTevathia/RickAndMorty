@@ -1,7 +1,7 @@
 import CharacterCard from '../CharacterCards/CharacterCard'
 import classes from './ListOfCharacters.module.css'
 
-const ListOfCharacters = ({ data }) => {
+const ListOfCharacters = ({ pageLoaded, data }) => {
 
     return (
         <>
@@ -14,7 +14,7 @@ const ListOfCharacters = ({ data }) => {
                 (<div className={classes.grid} >
                     {
                         data.map((ele) => (
-                            <CharacterCard data={ele} key={ele.id}></CharacterCard>
+                            <CharacterCard pageLoaded={pageLoaded} data={ele} key={ele.id}></CharacterCard>
                         ))
                     }
                 </div >)

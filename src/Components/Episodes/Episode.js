@@ -66,7 +66,7 @@ const Episode = () => {
           </div>
         </div>
         <div>
-          <ListOfCharacters data={data} />
+          <ListOfCharacters pageLoaded='/Episode/' data={data} />
 
         </div>
       </div>
