@@ -21,8 +21,8 @@ const InputGroup = ({ episodeCount, setId, name }) => {
                 `}
             </style>
 
-            <select className="form-select selectItem" id="episodes" onChange={handleChange} value="1">
-                < option selected>Choose...</option>
+            <select className="form-select selectItem" id="episodes" onChange={handleChange}>
+                < option selected value='1'>Choose...</option>
                 {
                     [...Array(episodeCount).keys()].map(a => {
                         return (
