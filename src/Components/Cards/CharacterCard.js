@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
+import classes from './CharacterCard.module.css'
 
 const CharacterCard = () => {
     let { id } = useParams();
@@ -37,99 +38,28 @@ const CharacterCard = () => {
             }}>
                 <div>
                     <img style={{
-                        border: 'solid #1bff00e0 2px',
+                        border: 'solid #0d6efd 1.5px',
                         borderRadius: '5px'
                     }} src={characterinfo.image} alt="CharacterImage" />
                 </div>
                 <div style={{ marginTop: '4px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
-                    <div className='row' style={{ width: '304px' }}>
-                        <div className='col' style={{
-                            display: 'flex',
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                            border: 'solid 2px #1bff00e0',
-                            marginTop: '0.3rem',
-                            borderRadius: '5px',
-                            fontFamily: "Lucida Console",
-                            color: '#0d6efd ',
-                        }}>
-                            Name: {characterinfo?.name}
-                        </div>
+                    <div className={classes.detailsDiv}>
+                        Name: {characterinfo?.name}
                     </div>
-                    <div className='row' style={{ width: '304px' }}>
-                        <div className='col'
-                            style={{
-                                display: 'flex',
-                                alignItems: 'center',
-                                justifyContent: 'center',
-                                border: 'solid 2px #1bff00e0',
-                                marginTop: '0.3rem',
-                                borderRadius: '5px',
-                                fontFamily: "Lucida Console",
-                                color: '#0d6efd '
-                            }}>
-                            Location: {characterinfo?.location?.name}
-                        </div>
+                    <div className={classes.detailsDiv}>
+                        Location: {characterinfo?.location?.name}
                     </div>
-                    <div className='row' style={{ width: '304px' }}>
-                        <div className='col'
-                            style={{
-                                display: 'flex',
-                                alignItems: 'center',
-                                justifyContent: 'center',
-                                border: 'solid 2px #1bff00e0',
-                                marginTop: '0.3rem',
-                                borderRadius: '5px',
-                                fontFamily: "Lucida Console",
-                                color: '#0d6efd '
-                            }}>
-                            Species: {characterinfo.species}
-                        </div>
+                    <div className={classes.detailsDiv}>
+                        Species: {characterinfo.species}
                     </div>
-                    <div className='row' style={{ width: '304px' }}>
-                        <div className='col'
-                            style={{
-                                display: 'flex',
-                                alignItems: 'center',
-                                justifyContent: 'center',
-                                border: 'solid 2px #1bff00e0',
-                                marginTop: '0.3rem',
-                                borderRadius: '5px',
-                                fontFamily: "Lucida Console",
-                                color: '#0d6efd '
-                            }}>
-                            Status: {characterinfo.status}
-                        </div>
+                    <div className={classes.detailsDiv}>
+                        Status: {characterinfo.status}
                     </div>
-                    <div className='row' style={{ width: '304px' }}>
-                        <div className='col'
-                            style={{
-                                display: 'flex',
-                                alignItems: 'center',
-                                justifyContent: 'center',
-                                border: 'solid 2px #1bff00e0',
-                                marginTop: '0.3rem',
-                                borderRadius: '5px',
-                                fontFamily: "Lucida Console",
-                                color: '#0d6efd '
-                            }}>
-                            Gender: {characterinfo.gender}
-                        </div>
+                    <div className={classes.detailsDiv}>
+                        Gender: {characterinfo.gender}
                     </div>
-                    <div className='row' style={{ width: '304px' }}>
-                        <div className='col'
-                            style={{
-                                display: 'flex',
-                                alignItems: 'center',
-                                justifyContent: 'center',
-                                border: 'solid 2px #1bff00e0',
-                                marginTop: '0.3rem',
-                                borderRadius: '5px',
-                                fontFamily: "Lucida Console",
-                                color: '#0d6efd '
-                            }}>
-                            {characterinfo.type === '' ? 'Type: Regular' : 'Type: ' + characterinfo.type}
-                        </div>
+                    <div className={classes.detailsDiv}>
+                        {characterinfo.type === '' ? 'Type: Regular' : 'Type: ' + characterinfo.type}
                     </div>
                 </div>
             </div>

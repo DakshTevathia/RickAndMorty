@@ -1,0 +1,12 @@
+.detailsDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1.5px #0d6efd;
+    margin-top: 0.3rem;
+    border-radius: 5px;
+    font-family: "Lucida Console";
+    color: #0d6efd ;
+    text-shadow: 1px 1px 4px #1aff00de;
+    width: 420px;
+}
