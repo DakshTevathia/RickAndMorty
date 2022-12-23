@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import classes from '../Components/MainPage.module.css'
 const MainPage = () => {
     return (
-        <div style={{ height: 'inherit' }}>
+        <div>
             <div style={{
                 display: 'flex',
                 flexDirection: 'column',
