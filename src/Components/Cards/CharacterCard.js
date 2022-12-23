@@ -1,3 +1,4 @@
+import { height } from '@mui/system';
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import classes from './CharacterCard.module.css'
@@ -27,8 +28,8 @@ const CharacterCard = () => {
         <div style={{
             display: 'flex',
             justifyContent: 'center',
-            height: '80vh',
-            alignItems: 'center'
+            alignItems: 'center',
+            height: '80vh'
         }}>
             <div style={{
                 display: 'flex',

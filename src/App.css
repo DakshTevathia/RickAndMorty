@@ -5,6 +5,11 @@
     margin-bottom: 0.3rem;
 }
 
+.App {
+    height: 100vh;
+    width: 100vw;
+}
+
 .zClassLevel {
     font-family: "Lucida Console";
     color: #0a58ca;

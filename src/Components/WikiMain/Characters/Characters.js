@@ -30,7 +30,7 @@ const Characters = () => {
 
     }, [url, search]);
     return (
-        <div>
+        <div style={{ height: 'inherit' }}>
             <div><p className="h2 text-center mt-4 zClassLevel">Characters</p>
             </div>
             <SearchCharacters setSearch={setSearch} currentPage={pageNumber} setCurrentPage={setPageNumber} />

@@ -39,7 +39,7 @@ const Episode = () => {
   };
 
   return (
-    <div>
+    <div style={{ height: 'inherit' }}>
       <div className='row'>
         <h1 className='text-center mb-3'>Episode:{' '}
           <span className='text-primary'>{name === "" ? "Unknown" : name}</span> </h1>
