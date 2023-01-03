@@ -18,3 +18,9 @@
     margin-bottom: 4rem;
     z-index: 1;
 }
+
+@media only screen and (max-width: 450px) {
+    .FilterAndList {
+        flex-direction: column;
+    }
+}

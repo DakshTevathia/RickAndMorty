@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import InputGroup from '../InputGroup/InputGroup';
 import ListOfCharacters from '../WikiMain/Characters/ListofCharacters/ListOfCharacters';
-import classes from '../Episodes/Episode.module.css';
+import classes from './Location.module.css';
 
 
 const Location = () => {
@@ -31,22 +31,9 @@ const Location = () => {
                 <h5 className='text-center'>Dimension:{' '} {dimension === "" ? "Unknown" : dimension}</h5>
                 <h5 className='text-center'>Type:{' '} {dimension === "" ? "Unknown" : type}</h5>
             </div>
-            <div className={classes.episodeGrid}>
-                <div style={{
-                    display: "flex",
-                    // justifyContent: "center",
-                    flexDirection: "column",
-                    alignItems: "center"
-                }} >
-                    <div style={{
-                        position: "fixed",
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center",
-                        flexDirection: "column",
-                        gap: "10px",
-                        marginTop: "30px"
-                    }}>
+            <div className={classes.locationGrid}>
+                <div className={classes.centeringLocationInputDiv}>
+                    <div className={classes.inputGroupDiv} >
                         Pick Location
                         <InputGroup setId={setId} episodeCount={126} name="Location" />
                     </div>

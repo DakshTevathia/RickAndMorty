@@ -52,15 +52,7 @@ const Episode = () => {
           flexDirection: "column",
           alignItems: "center"
         }} >
-          <div style={{
-            position: "fixed",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            flexDirection: "column",
-            gap: "10px",
-            marginTop: "30px"
-          }}>
+          <div className={classes.inputGroupDiv}>
             Pick Episodes
             <InputGroup setId={setId} episodeCount={51} name="Episode" />
           </div>

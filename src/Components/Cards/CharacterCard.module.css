@@ -6,7 +6,49 @@
     margin-top: 0.3rem;
     border-radius: 5px;
     font-family: "Lucida Console";
-    color: #0d6efd ;
+    color: #0d6efd;
     text-shadow: 1px 1px 4px #1aff00de;
     width: 420px;
+}
+
+.outerDivContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.imageStyles {
+    border: solid #0d6efd 1.5px;
+    border-radius: 5px;
+}
+
+.containerDiv {
+    margin-top: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mainOuterDivContainer {
+    display: flex;
+    align-items: stretch;
+    column-gap: 2rem;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 450px) {
+    .detailsDiv {
+        width: 95%;
+    }
+
+    .mainOuterDivContainer {
+        flex-direction: column;
+    }
+    .outerDivContainer{
+        height: fit-content;
+        margin-top: 1rem;
+    }
+
 }

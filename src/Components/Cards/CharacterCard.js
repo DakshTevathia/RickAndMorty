@@ -1,4 +1,3 @@
-import { height } from '@mui/system';
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import classes from './CharacterCard.module.css'
@@ -25,25 +24,12 @@ const CharacterCard = () => {
     }, [url]);
 
     return (
-        <div style={{
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            height: '80vh'
-        }}>
-            <div style={{
-                display: 'flex',
-                alignItems: 'stretch',
-                columnGap: '2rem',
-                justifyContent: 'center'
-            }}>
+        <div className={classes.outerDivContainer}>
+            <div className={classes.mainOuterDivContainer}>
                 <div>
-                    <img style={{
-                        border: 'solid #0d6efd 1.5px',
-                        borderRadius: '5px'
-                    }} src={characterinfo.image} alt="CharacterImage" />
+                    <img className={classes.imageStyles} src={characterinfo.image} alt="CharacterImage" />
                 </div>
-                <div style={{ marginTop: '4px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
+                <div className={classes.containerDiv}>
                     <div className={classes.detailsDiv}>
                         Name: {characterinfo?.name}
                     </div>

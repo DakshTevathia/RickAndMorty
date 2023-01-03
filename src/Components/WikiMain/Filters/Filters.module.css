@@ -12,6 +12,11 @@
     grid-template-rows: 1fr 1fr 1fr;
 }
 
+.filterDiv {
+    z-index: 1;
+    width: 16.5rem;
+}
+
 .filterHeading {
     display: flex;
     justify-content: center;
@@ -33,4 +38,10 @@ button {
     border-radius: 4px;
     border-style: none;
     height: 48px;
+}
+
+@media only screen and (max-width: 450px) {
+    .filterDiv {
+        width: 100%;
+    }
 }
