@@ -10,7 +10,6 @@ const CharacterCard = () => {
         const axios = require('axios');
         axios.get(url)
             .then(function (response) {
-                console.log(response.data);
                 setCharacterInfo(response.data);
             })
             .catch(function (error) {
@@ -18,7 +17,7 @@ const CharacterCard = () => {
             });
 
         return () => {
-            setTimeout(() => { console.log("CleanUp") }, 2000)
+           
         }
 
     }, [url]);
@@ -26,7 +25,7 @@ const CharacterCard = () => {
     return (
         <div className={classes.outerDivContainer}>
             <div className={classes.mainOuterDivContainer}>
-                <div>
+                <div style={{ textAlign: "center" }}>
                     <img className={classes.imageStyles} src={characterinfo.image} alt="CharacterImage" />
                 </div>
                 <div className={classes.containerDiv}>

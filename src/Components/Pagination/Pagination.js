@@ -3,7 +3,6 @@ import ReactPaginate from 'react-paginate';
 import './PaginationStyles.css'
 
 const Pagination = ({ setPageNumber, pageNumber, pageDataCount }) => {
-    console.log(pageDataCount);
 
     let next = () => {
         setPageNumber((prevPageNumber) => (prevPageNumber + 1))

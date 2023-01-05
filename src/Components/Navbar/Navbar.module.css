@@ -42,3 +42,26 @@ a {
 .rightGrid div {
     align-self: center;
 }
+
+@media screen and (max-width:600px) {
+    .navbar {
+        display: inline-block;
+        padding: 20px;
+        justify-items: start;
+        position: sticky;
+        top: 0px;
+        z-index: 2;
+        width: 100vw;
+        background-color: #1bff00e0;
+    }
+
+    .wiki {
+        display: flex;
+        font-size: 1.5rem;
+        padding: 0.5rem 0;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+        font-family: "Lucida Console";
+    }
+}

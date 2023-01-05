@@ -3,7 +3,6 @@ import React from 'react'
 import classes from "./CharacterCard.module.css"
 
 const CharacterCard = ({ pageLoaded, data, key }) => {
-    console.log(data);
     return (
         <Link to={`${pageLoaded}${data.id}`} key={data.id} className={classes.maindiv}>
             <img className={classes.img} src={data.image} alt="CharacterImage" />

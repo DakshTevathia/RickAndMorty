@@ -15,9 +15,7 @@ const Location = () => {
         (async function () {
             let data = await fetch(api).then((res) => res.json())
             setInfo(data);
-            console.log(data);
             let a = await Promise.all(data.residents?.map((linkUrl) => { return fetch(linkUrl).then(res => res.json()) }));
-            console.log(a);
             setData(a);
         })();
     }, [api])

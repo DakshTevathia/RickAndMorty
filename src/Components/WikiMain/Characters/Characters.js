@@ -25,7 +25,7 @@ const Characters = () => {
             });
 
         return () => {
-            setTimeout(() => { console.log("CleanUp") }, 2000)
+            
         }
 
     }, [url, search]);
