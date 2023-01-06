@@ -1,6 +1,7 @@
 .pagination {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .FilterAndList {
@@ -22,5 +23,11 @@
 @media only screen and (max-width: 450px) {
     .FilterAndList {
         flex-direction: column;
+    }
+    .paginationStyles {
+        position: relative;
+        left: 0;
+        margin-bottom: 0;
+        z-index: 1;
     }
 }

@@ -14,10 +14,15 @@ const Pagination = ({ setPageNumber, pageNumber, pageDataCount }) => {
 
     return (
         <div>
-               <style jsx>
+            <style jsx>
                 {`
                 .y{
-                    width:60px
+                    width:60px;
+                    height:38px;
+                  }
+                  .centeringBtn{
+                    align-items:center;
+                    justify-content:center;
                   }
                 `}
             </style>
@@ -27,12 +32,12 @@ const Pagination = ({ setPageNumber, pageNumber, pageDataCount }) => {
                 pageRangeDisplayed={2}
                 previousLabel={<button className='btn btn-primary y' onClick={prev}>Prev</button>}
                 nextLabel={<button className='btn btn-primary y' onClick={next}>Next</button>}
-                className="pagination justify-content-center gap-2 my-2"
+                className="pagination gap-my-2 centeringBtn"
                 pageClassName='page-item'
                 pageLinkClassName='page-link m-1'
                 onPageChange={(data) => { setPageNumber(data.selected + 1); }}
                 activeClassName="active"
-                breakLabel=". . . . ."
+                breakLabel=". . ."
                 forcePage={pageNumber === 1 ? 0 : pageNumber - 1}
             />
         </div>

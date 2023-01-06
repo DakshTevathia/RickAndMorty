@@ -14,3 +14,19 @@
     font-family: "Lucida Console";
     color: #0a58ca;
 }
+
+.mainBgImage {
+    z-index: -5;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    opacity: 0.65;
+
+}
+
+@media screen and (max-width:600px) {
+    .mainBgImage {
+        width: auto;
+    }
+
+}
