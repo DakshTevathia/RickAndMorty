@@ -37,7 +37,7 @@ const Episode = () => {
   };
 
   return (
-    <div style={{ height: 'inherit' }}>
+    <div className={classes.fixingPaddingClass}>
       <div className='row'>
         <h1 className='text-center mb-3'>Episode:{' '}
           <span className='text-primary'>{name === "" ? "Unknown" : name}</span> </h1>

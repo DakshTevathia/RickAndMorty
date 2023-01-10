@@ -30,7 +30,7 @@ const Characters = () => {
 
     }, [url, search]);
     return (
-        <div style={{ height: 'inherit' }}>
+        <div className={classes.fixingPaddingClass}>
             <div><p className="h2 text-center mt-4 zClassLevel">Characters</p>
             </div>
             <SearchCharacters setSearch={setSearch} currentPage={pageNumber} setCurrentPage={setPageNumber} />

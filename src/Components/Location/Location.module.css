@@ -21,6 +21,10 @@
     align-items: center;
 }
 
+.fixingPaddingClass {
+    padding-top: 6rem;
+}
+
 @media only screen and (max-width: 450px) {
     .locationGrid {
         display: flex;
@@ -30,4 +34,9 @@
     .inputGroupDiv {
         position: static;
     }
+    
+.fixingPaddingClass{
+    padding-top: 8rem;
+}
+
 }

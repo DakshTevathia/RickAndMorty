@@ -4,8 +4,8 @@
     margin: 10px 0px;
 }
 
-.container {
-    /* height: 100vh; */
+.fixingPaddingClass {
+    padding-top: 6rem;
 }
 
 .dropdown {
@@ -44,4 +44,9 @@
     .inputGroupDiv {
         position: static;
     }
+
+    .fixingPaddingClass {
+        padding-top: 8rem;
+    }
+
 }

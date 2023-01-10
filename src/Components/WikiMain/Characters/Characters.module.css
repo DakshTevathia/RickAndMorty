@@ -4,6 +4,10 @@
     align-items: center;
 }
 
+.fixingPaddingClass{
+    padding-top: 6rem;
+}
+
 .FilterAndList {
     display: flex;
 }
