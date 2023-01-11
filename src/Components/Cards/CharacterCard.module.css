@@ -45,10 +45,11 @@
 
     .mainOuterDivContainer {
         flex-direction: column;
+        margin-top: 7.7rem;
     }
-    .outerDivContainer{
+
+    .outerDivContainer {
         height: fit-content;
-        margin-top: 1rem;
     }
 
 }
