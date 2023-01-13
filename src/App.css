@@ -11,7 +11,7 @@
     color: #0a58ca;
 }
 
-.mainBgImage::before {
+.mainBgImage::after {
     content: '';
     height: 100%;
     width: 100%;
@@ -25,9 +25,9 @@
 .mainBgImage {
     z-index: -5;
     position: fixed;
+    height: 100%;
     width: 100%;
-    height: auto;
-    background-size: cover;
+    background-size: contain;
     opacity: 0.65;
 
 }
