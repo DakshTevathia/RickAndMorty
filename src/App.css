@@ -11,10 +11,22 @@
     color: #0a58ca;
 }
 
+.mainBgImage::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    z-index: -10000;
+    background-color: rgba(0, 0, 0, 0.301);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .mainBgImage {
     z-index: -5;
     position: fixed;
-    height: 100%;
+    width: 100%;
+    height: auto;
     background-size: cover;
     opacity: 0.65;
 
